@@ -1,10 +1,10 @@
 name: CI/CD
 
 on:
-  pull_request:
+  push:
     branches:
       - main
-  push:
+  pull_request:
     branches:
       - main
 
@@ -73,6 +73,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: build/libs/micronaut-crud.jar
+          asset_path: build/libs/*.jar
           asset_name: micronaut-crud.jar
           asset_content_type: application/java-archive
