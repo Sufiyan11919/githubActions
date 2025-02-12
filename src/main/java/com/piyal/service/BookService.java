@@ -34,7 +34,6 @@ public class BookService {
                 .orElseThrow(() -> new BookNotFoundException("Book with id %s not found".formatted(id)));
     }
 
-    //commented to check the github actions test1
     public Book update(Long id, BookData bookData) {
         Book bookToUpdate = bookRepository.findById(id)
                 .orElseThrow(() -> new BookNotFoundException("Book with id %s not found".formatted(id)));
