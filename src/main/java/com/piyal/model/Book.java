@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//Comment to test the main push invoke
 @MappedEntity(value = "books")
 @Serdeable
 @AllArgsConstructor
