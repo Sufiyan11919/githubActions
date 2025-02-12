@@ -48,7 +48,7 @@ jobs:
         run: ./gradlew clean build
 
       - name:
-          Debug: list build/libs
+        Debug: list build/libs
         run: ls -la build/libs
 
       - name: Upload build artifact (JAR)
