@@ -12,6 +12,7 @@ import io.micronaut.http.annotation.Produces;
 import io.micronaut.http.server.exceptions.ExceptionHandler;
 import jakarta.inject.Singleton;
 
+//comment to test the GitHub Action
 @Produces
 @Singleton
 @Requires(classes = {BookNotFoundException.class, ExceptionHandler.class})
