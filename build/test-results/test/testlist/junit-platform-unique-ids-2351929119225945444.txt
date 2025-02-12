@@ -1,0 +1,1 @@
+[engine:junit-jupiter]/[class:com.piyal.ApplicationTest]/[method:testItWorks()]
