@@ -47,7 +47,7 @@ jobs:
           MYSQL_PORT: 3307
         run: ./gradlew clean build
 
-      - name: Debug: list build/libs
+      - name: "Debug: list build/libs"
         run: ls -la build/libs
 
       - name: Upload build artifact (JAR)
